@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice 3</title>  
+        <link rel="stylesheet" type="text/css" href="css/my_style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Practice 3
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="Practice.html">Practice 1</a></li>
+                <li><a href="index2.html">Practice 2</a></li>
+                <li><a href="index3.html">Practice 3</a></li>
+            </ul>
+
+        </nav>
+
+        <section>
+
+        </section>
+
+        <footer>
+
+     </footer>
+
+    </body>
+</html>
+    
