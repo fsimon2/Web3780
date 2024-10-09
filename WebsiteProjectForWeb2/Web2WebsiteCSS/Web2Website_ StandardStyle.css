@@ -1,0 +1,33 @@
+* {
+	margin: 0;              
+	padding: 0;             
+	box-sizing: border-box; 
+}
+
+nav {
+	overflow: hidden; 
+	background-color: #3f83c2; /* Policeman blue */
+	box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.4);  /* Add shadow to the bottom of the nav */
+}
+
+nav a {
+	float: right;
+	color: #f1eded;
+	text-align: center;
+	padding: 2% 3%;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+nav a.active {
+	background-color: #15639b; /* Darker shade of policeman blue */
+	color: rgb(248, 248, 249);
+}
+
+
+
