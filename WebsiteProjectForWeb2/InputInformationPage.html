@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Totally Awesome Stuff</title>
+    <title>Inmates incorporated</title>
     <link rel="stylesheet" type="text/css" href="Web2WebsiteCSS/Web2Website_ StandardStyle.css">
 </head>
+
 <body>
     <header>
     </header>
@@ -17,8 +19,86 @@
         <a href="ShowInformationPage.html">View</a>
     </nav>
     <section>
+        <br class="double-space">
+        <form>
+            <div class="grid-container">
+
+                <!-- first row of the form -->
+                <div class="two-tems-in-one-row">
+
+                    <div class="grid-item">
+                        <label for="Prisoner_First_Name">Prisoner first name:</label>
+                        <input type="text" id="prisoner_fname" name="prisoner_fname" value="">
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="Prisoner_Last_Name">Prisoner last name:</label>
+                        <input type="text" id="prisoner_lname" name="prisoner_lname" value="">
+                    </div>
+
+                </div>
+
+                <!-- second row of the form -->
+                <div class="three-items-in-one-row">
+
+                    <div class="grid-item">
+                        <label for="Birthday">Birthday:</label>
+                        <input type="text" id="birthday" name="birthday" value="">
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="Height">Height:</label>
+                        <input type="text" id="height" name="height" value="">
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="Weight">Weight:</label>
+                        <input type="text" id="weight" name="weight" value="">
+                    </div>
+                </div>
+
+                <!-- third row of the form -->
+                <div class="one-tems-in-one-row">
+                    <div class="grid-item">
+                        <label for="Prisoners_Crime">Description of prisoner's crime:</label>
+                        <br>
+                        <textarea id="prisoner_crime" name="prisoner_crime" value=""></textarea>
+                    </div>
+                </div>
+
+                <!-- fourth row of the form -->
+                <div class="two-tems-in-one-row">
+
+                    <div class="grid-item">
+                        <label for="Sentence_Start_Date">Sentence start date:</label>
+                        <input type="text" id="sentence_start_date" name="sentence_start_date" value="">
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="Sentence_End_Date">Sentence end date:</label>
+                        <input type="text" id="sentence_end_date" name="sentence_end_date" value="">
+                    </div>
+                </div>
+
+
+                <!-- fifth row of the form -->
+                <div class="one-tems-in-one-row">
+                    <div class="grid-item">
+                        <label for="Prisoner_Threat_Level">Prisoner threat level:</label>
+                        <input type="text" id="prisoner_threat_level" name="prisoner_threat_level" value="">
+                    </div>
+                </div>
+
+                <!-- submit button row -->
+                <div class="one-tems-in-one-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+
     </section>
     <footer>
     </footer>
 </body>
+
 </html>

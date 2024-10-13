@@ -1,13 +1,16 @@
 * {
-	margin: 0;              
-	padding: 0;             
-	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+/*this product does CSS takes care of the navigation */
 nav {
-	overflow: hidden; 
-	background-color: #3f83c2; /* Policeman blue */
-	box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.4);  /* Add shadow to the bottom of the nav */
+	overflow: hidden;
+	background-color: #3f83c2;
+	/* Policeman blue */
+	box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.4);
+	/* Add shadow to the bottom of the nav */
 }
 
 nav a {
@@ -25,8 +28,101 @@ nav a:hover {
 }
 
 nav a.active {
-	background-color: #15639b; /* Darker shade of policeman blue */
+	background-color: #15639b;
 	color: rgb(248, 248, 249);
+}
+
+/*This part of the code allows the you to have a double line break <br>*/
+.double-space {
+	display: block;
+	content: "";
+	height: 1.5em;
+}
+
+/* It is part of the CSS takes care of the grid the form is placed in */
+.grid-container {
+	display: grid;
+	padding: 10px 10px;
+	background-color: #bcd8f1;
+	margin: 20px auto;
+	width: 90%;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.grid-item {
+	border-bottom: 2px solid #000000;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.one-tems-in-one-row {
+	grid-column: span 3;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+
+.two-tems-in-one-row {
+	grid-column: span 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.three-items-in-one-row {
+	grid-column: span 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* This part of the CSS takes care of the form */
+input[type=text] {
+	width: 100%;
+	padding: 9px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #ccc;
+	-webkit-transition: 1s;
+	transition: 1s;
+	outline: none;
+}
+
+input[type=text]:focus {
+	border: 3px solid #ea0a9c;
+}
+
+textarea {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	outline: none;
+}
+
+
+
+
+
+
+
+input[type=submit] {
+	width: 100%;
+	background-color: #0f578e;
+	color: rgb(255, 255, 255);
+	padding: 14px 20px;
+	margin: 20px 0px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #ff9205;
 }
 
 
