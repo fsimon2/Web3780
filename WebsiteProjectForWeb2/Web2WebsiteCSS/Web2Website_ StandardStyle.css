@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #d3d3d3;
+}
+
 /*this product does CSS takes care of the navigation */
 nav {
 	overflow: hidden;
@@ -89,27 +93,74 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-	border: 3px solid #ea0a9c;
+	border: 3px solid #515050;
 }
 
-textarea {
+input[type=date] {
 	width: 100%;
-	height: auto;
-	padding: 10px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	background-color: #f8f8f8;
-	font-size: 16px;
+	padding: 9px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #ccc;
+	-webkit-transition: 1s;
+	transition: 1s;
 	outline: none;
 }
 
+input[type=date]:focus {
+	border: 3px solid #515050;
+}
+
+input[type=number] {
+	width: 100%;
+	padding: 9px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #ccc;
+	-webkit-transition: 1s;
+	transition: 1s;
+	outline: none;
+}
+
+input[type=number]:focus {
+	border: 3px solid #515050;
+}
 
 
+textarea {
+	width: 100%;
+	padding: 9px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #ccc;
+	-webkit-transition: 1s;
+	transition: 1s;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+textarea:focus {
+	border: 3px solid #515050;
+}
 
 
+select {
+	width: 100%;
+	padding: 9px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #ccc;
+	-webkit-transition: 1s;
+	transition: 1s;
+	outline: none;
+}
 
-
+select:focus {
+	border: 3px solid #515050;
+}
 input[type=submit] {
 	width: 100%;
 	background-color: #0f578e;
@@ -125,5 +176,15 @@ input[type=submit]:hover {
 	background-color: #ff9205;
 }
 
-
+/* This part of the css is for error messages*/
+.error-message {
+    color: rgba(255, 0, 0, 0.7); 
+    font-size: 12px;
+    display: none;
+    background-color: white; 
+    border: 1px solid #ccc; 
+    padding: 10px;
+    border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+}
 
