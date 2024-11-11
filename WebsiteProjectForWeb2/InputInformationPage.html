@@ -4,6 +4,21 @@
 <head>
     <title>Inmates incorporated</title>
     <link rel="stylesheet" type="text/css" href="Web2WebsiteCSS/Web2Website_ StandardStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            // Hide the form initially
+            $("form").hide();
+
+            // Show the form and hide the buttons when the "Fill Out Prisoner Form" button is clicked
+            $("#showPrisonerForm").click(function () {
+                $("form").toggle();
+                $("#showPrisonerForm, #showGuardForm").hide();
+            });
+        });
+
+    </script>
     <script src="Web2WebsiteJS/MethodsForPrisonerForm.js" defer></script>
 </head>
 
@@ -22,21 +37,23 @@
     <section>
         <br class="double-space">
         <form>
-            <div class="grid-container">
+            <div class="container">
 
                 <!-- first row of the form -->
                 <div class="two-tems-in-one-row">
 
                     <div class="grid-item">
                         <label for="Prisoner_First_Name">Prisoner first name:</label>
-                        <input type="text" id="prisoner_fname" name="prisoner_fname" placeholder="Enter first name" value="" >
+                        <input type="text" id="prisoner_fname" name="prisoner_fname" placeholder="Enter first name"
+                            value="">
                         <div id="firstNameTypeError" class="error-message">Please enter text only, no numbers.</div>
                         <div class="error-message">This field is required.</div>
                     </div>
 
                     <div class="grid-item">
                         <label for="Prisoner_Last_Name">Prisoner last name:</label>
-                        <input type="text" id="prisoner_lname" name="prisoner_lname" placeholder="Enter last name" value="">
+                        <input type="text" id="prisoner_lname" name="prisoner_lname" placeholder="Enter last name"
+                            value="">
                         <div id="lastNameTypeError" class="error-message">Please enter text only, no numbers.</div>
                         <div class="error-message">This field is required.</div>
                     </div>
@@ -64,7 +81,8 @@
                     <div class="grid-item">
                         <label for="Weight">Weight:</label>
                         <br>
-                        <input type="number" id="weight" name="weight" placeholder="000lb" value="" style="width: 100px;">
+                        <input type="number" id="weight" name="weight" placeholder="000lb" value=""
+                            style="width: 100px;">
                         <div id="weightError" class="error-message">Please enter a wait that does not exceed 900Lb</div>
                         <div id="weightTypeError" class="error-message">Please make sure you put in a number</div>
                         <div class="error-message">This field is required.</div>
@@ -76,7 +94,8 @@
                     <div class="grid-item">
                         <label for="Prisoners_Crime">Description of prisoner's crime:</label>
                         <br>
-                        <textarea id="prisoner_crime" name="prisoner_crime" placeholder="Enter description"value=""></textarea>
+                        <textarea id="prisoner_crime" name="prisoner_crime" placeholder="Enter description"
+                            value=""></textarea>
                         <div class="error-message">This field is required.</div>
                     </div>
                 </div>
@@ -119,8 +138,13 @@
                 </div>
             </div>
         </form>
+
+        <button id="showGuardForm" class="button">Fill Out Guard Form</button> 
+        <button id="showPrisonerForm" class="button">Fill Out Prisoner Form</button>
+
     </section>
     <footer>
     </footer>
 </body>
+
 </html>
