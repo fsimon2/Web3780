@@ -63,14 +63,14 @@ nav a.active {
 	font-size: 18px;
 }
 
-.one-tems-in-one-row {
+.one-items-in-one-row {
 	grid-column: span 3;
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
 
-.two-tems-in-one-row {
+.two-items-in-one-row {
 	grid-column: span 3;
 	display: grid;
 	grid-template-columns: 1fr 1fr;

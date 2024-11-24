@@ -40,7 +40,7 @@
             <div class="container">
 
                 <!-- first row of the form -->
-                <div class="two-tems-in-one-row">
+                <div class="two-items-in-one-row">
 
                     <div class="grid-item">
                         <label for="Prisoner_First_Name">Prisoner first name:</label>
@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- third row of the form -->
-                <div class="one-tems-in-one-row">
+                <div class="one-items-in-one-row">
                     <div class="grid-item">
                         <label for="Prisoners_Crime">Description of prisoner's crime:</label>
                         <br>
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- fourth row of the form -->
-                <div class="two-tems-in-one-row">
+                <div class="two-items-in-one-row">
 
                     <div class="grid-item">
                         <label for="Sentence_Start_Date">Sentence start date:</label>
@@ -116,9 +116,37 @@
                     </div>
                 </div>
 
+                <!-- fifth row of the form -->`
+                <div class="two-items-in-one-row">
+                    <div class="grid-item">
+                        <label for="Cell_Block">Cell block:</label>
+                        <select id="cell_block" name="cell_block">
+                            <option value="" disabled selected>Select Cell Block</option>
+                            <option value="Cell Block A">Cell Block A</option>
+                            <option value="Cell Block B">Cell Block B</option>
+                            <option value="Cell Block C">Cell Block C</option>
+                            <option value="Cell Block D">Cell Block D</option>
+                        </select>
+                        <div class="error-message">This field is required.</div>
+                    </div>
 
-                <!-- fifth row of the form -->
-                <div class="one-tems-in-one-row">
+
+                    <div class="grid-item">
+                        <label for="cell_mate">Cell mate:</label>
+                        <select id="cell_mate" name="cell_mate">
+                            <option value="" disabled selected>Select Cell Mate</option>
+                        </select>
+                        <div class="error-message">This field is required.</div>
+                    </div>
+
+                </div>
+
+
+            
+
+
+                <!-- sixth row of the form -->
+                <div class="one-items-in-one-row">
                     <div class="grid-item">
                         <label for="threat_level">Prisoner threat level:</label>
                         <select id="threat_level" name="threat_level">
@@ -133,7 +161,7 @@
                 </div>
 
                 <!-- submit button row -->
-                <div class="one-tems-in-one-row">
+                <div class="one-items-in-one-row">
                     <input type="submit" value="Submit">
                 </div>
             </div>
