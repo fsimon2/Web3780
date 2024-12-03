@@ -2,11 +2,10 @@
 <html>
 
 <head>
-    <title>Inmates incorporated</title>
-    <link rel="stylesheet" type="text/css" href="Web2WebsiteCSS/Web2Website_ StandardStyle.css">
+    <title>Inmates Incorporated</title>
+    <link rel="stylesheet" type="text/css" href="Web2WebsiteCSS/Web2Website_StandardStyleWithoutServerConnection.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        
         $(document).ready(function () {
             // Hide the form initially
             $("form").hide();
@@ -17,106 +16,85 @@
                 $("#showPrisonerForm, #showGuardForm").hide();
             });
         });
-
     </script>
-    <script src="Web2WebsiteJS/MethodsForPrisonerForm.js" defer></script>
+    <script src="Web2WebsiteJS/MethodsForPrisonerFormWithoutServerConnection.js" defer></script>
 </head>
 
 <body>
     <header>
     </header>
     <nav>
-        <a href="loginpage.html">Sign Out</a>
-
-        <a href="AccountDetailsPage.html">Account Details</a>
-
-        <a class="active" href="InputInformationPage.html">Input</a>
-
-        <a href="ShowInformationPage.html">View</a>
+        <a href="loginpageWithoutServerConnection.html">Sign Out</a>
+        <a href="AccountDetailsPageWithoutServerConnection.html">Account Details</a>
+        <a class="active" href="InputInformationPageWithoutServerConnection.html">Input</a>
+        <a href="ShowInformationPageWithoutServerConnection.html">View</a>
     </nav>
     <section>
         <br class="double-space">
         <form>
             <div class="container">
-
                 <!-- first row of the form -->
                 <div class="two-items-in-one-row">
-
                     <div class="grid-item">
                         <label for="Prisoner_First_Name">Prisoner first name:</label>
-                        <input type="text" id="prisoner_fname" name="prisoner_fname" placeholder="Enter first name"
-                            value="">
+                        <input type="text" id="prisoner_fname" name="prisoner_fname" placeholder="Enter first name" value="">
                         <div id="firstNameTypeError" class="error-message">Please enter text only, no numbers.</div>
                         <div class="error-message">This field is required.</div>
                     </div>
-
                     <div class="grid-item">
                         <label for="Prisoner_Last_Name">Prisoner last name:</label>
-                        <input type="text" id="prisoner_lname" name="prisoner_lname" placeholder="Enter last name"
-                            value="">
+                        <input type="text" id="prisoner_lname" name="prisoner_lname" placeholder="Enter last name" value="">
                         <div id="lastNameTypeError" class="error-message">Please enter text only, no numbers.</div>
                         <div class="error-message">This field is required.</div>
                     </div>
-
                 </div>
-
                 <!-- second row of the form -->
                 <div class="three-items-in-one-row">
-
                     <div class="grid-item">
                         <label for="Birthday">Birthday:</label>
                         <input type="date" id="birthday" name="birthday" value="">
                         <div class="error-message">This field is required.</div>
                     </div>
-
                     <div class="grid-item">
                         <label for="Height">Height:</label>
                         <br>
                         <input type="number" id="height" name="height" placeholder="0,0" value="" style="width: 100px;">
                         <div id="heightError" class="error-message">Please enter a height between 1 and 8 feet.</div>
-                        <div id="heightTypeError" class="error-message">Please make sure you put in a number</div>
+                        <div id="heightTypeError" class="error-message">Please make sure you put in a number.</div>
                         <div class="error-message">This field is required.</div>
                     </div>
-
                     <div class="grid-item">
                         <label for="Weight">Weight:</label>
                         <br>
-                        <input type="number" id="weight" name="weight" placeholder="000lb" value=""
-                            style="width: 100px;">
-                        <div id="weightError" class="error-message">Please enter a wait that does not exceed 900Lb</div>
-                        <div id="weightTypeError" class="error-message">Please make sure you put in a number</div>
+                        <input type="number" id="weight" name="weight" placeholder="000lb" value="" style="width: 100px;">
+                        <div id="weightError" class="error-message">Please enter a weight that does not exceed 900 lbs.</div>
+                        <div id="weightTypeError" class="error-message">Please make sure you put in a number.</div>
                         <div class="error-message">This field is required.</div>
                     </div>
                 </div>
-
                 <!-- third row of the form -->
                 <div class="one-items-in-one-row">
                     <div class="grid-item">
                         <label for="Prisoners_Crime">Description of prisoner's crime:</label>
                         <br>
-                        <textarea id="prisoner_crime" name="prisoner_crime" placeholder="Enter description"
-                            value=""></textarea>
+                        <textarea id="prisoner_crime" name="prisoner_crime" placeholder="Enter description"></textarea>
                         <div class="error-message">This field is required.</div>
                     </div>
                 </div>
-
                 <!-- fourth row of the form -->
                 <div class="two-items-in-one-row">
-
                     <div class="grid-item">
                         <label for="Sentence_Start_Date">Sentence start date:</label>
                         <input type="date" id="sentence_start_date" name="sentence_start_date" value="">
                         <div class="error-message">This field is required.</div>
                     </div>
-
                     <div class="grid-item">
                         <label for="Sentence_End_Date">Sentence end date:</label>
                         <input type="date" id="sentence_end_date" name="sentence_end_date" value="">
                         <div class="error-message">This field is required.</div>
                     </div>
                 </div>
-
-                <!-- fifth row of the form -->`
+                <!-- fifth row of the form -->
                 <div class="two-items-in-one-row">
                     <div class="grid-item">
                         <label for="Cell_Block">Cell block:</label>
@@ -129,8 +107,6 @@
                         </select>
                         <div class="error-message">This field is required.</div>
                     </div>
-
-
                     <div class="grid-item">
                         <label for="cell_mate">Cell mate:</label>
                         <select id="cell_mate" name="cell_mate">
@@ -138,13 +114,7 @@
                         </select>
                         <div class="error-message">This field is required.</div>
                     </div>
-
                 </div>
-
-
-            
-
-
                 <!-- sixth row of the form -->
                 <div class="one-items-in-one-row">
                     <div class="grid-item">
@@ -155,21 +125,18 @@
                             <option value="medium">Medium</option>
                             <option value="high">High</option>
                             <option value="critical">Critical</option>
-                            <div class="error-message">This field is required.</div>
                         </select>
+                        <div class="error-message">This field is required.</div>
                     </div>
                 </div>
-
                 <!-- submit button row -->
                 <div class="one-items-in-one-row">
                     <input type="submit" value="Submit">
                 </div>
             </div>
         </form>
-
         <button id="showGuardForm" class="button">Fill Out Guard Form</button> 
         <button id="showPrisonerForm" class="button">Fill Out Prisoner Form</button>
-
     </section>
     <footer>
     </footer>

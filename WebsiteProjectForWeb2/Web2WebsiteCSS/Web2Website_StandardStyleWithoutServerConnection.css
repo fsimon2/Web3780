@@ -82,6 +82,12 @@ nav a.active {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
+.four-items-in-one-row {
+	grid-column: span 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* This part of the CSS takes care of the form */
 input[type=text], input[type=date], input[type=number], select, input[type=password] {
 	width: 100%;

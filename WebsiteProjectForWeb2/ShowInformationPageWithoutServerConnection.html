@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inmates incorporated</title>
+    <link rel="stylesheet" type="text/css" href="Web2WebsiteCSS/Web2Website_StandardStyleWithoutServerConnection.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Hide the second container initially
+            $("#secondContainer").hide();
+
+            // Show the second container and hide the first container when any button is clicked
+            $("#firstContainer .button").click(function () {
+                $("#firstContainer").hide();
+                $("#secondContainer").show();
+            });
+
+            // Show the first container and hide the second container when the "Back" button is clicked
+            $("#backButton").click(function () {
+                $("#firstContainer").show();
+                $("#secondContainer").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <a href="loginpageWithoutServerConnection.html">Sign Out</a>
+        <a href="AccountDetailsPageWithoutServerConnection.html">Account Details</a>
+        <a href="InputInformationPageWithoutServerConnection.html">Input</a>
+        <a class="active" href="ShowInformationPageWithoutServerConnection.html">View</a>
+    </nav>
+    <br class="double-space">
+
+    <div id="firstContainer" class="container">
+
+        <div class="four-items-in-one-row">
+            <div class="grid-item">
+                <button id="theJoker" class="button">The Joker</button>
+            </div>
+            <div class="grid-item">
+                <button id="lexLuthor" class="button">Lex Luthor</button>
+            </div>
+            <div class="grid-item">
+                <button id="harleyQuinn" class="button">Harley Quinn</button>
+            </div>
+            <div class="grid-item">
+                <button id="thanos" class="button">Thanos Thanos</button>
+            </div>
+        </div>
+
+        <div class="four-items-in-one-row">
+            <div class="grid-item">
+                <button id="normanOsborn" class="button">Norman Osborn</button>
+            </div>
+            <div class="grid-item">
+                <button id="ottoOctavius" class="button">Otto Octavius</button>
+            </div>
+            <div class="grid-item">
+                <button id="edwardNigma" class="button">Edward Nigma</button>
+            </div>
+            <div class="grid-item">
+                <button id="erikLehnsherr" class="button">Erik Lehnsherr</button>
+            </div>
+        </div>
+        
+        <div class="four-items-in-one-row">
+            <div class="grid-item">
+                <button id="barbaraMinerva" class="button">Barbara Minerva</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="secondContainer" class="container">
+
+        <div class="two-items-in-one-row">
+
+            <div class="grid-item">
+                <label for="Prisoner_First_Name">Prisoner first name:</label>
+                <p id="prisonerFirstName"></p>
+            </div>
+
+            <div class="grid-item">
+                <label for="Prisoner_Last_Name">Prisoner last name:</label>
+                <p id="prisonerLastName"></p>
+            </div>
+
+        </div>
+
+        <div class="three-items-in-one-row">
+
+            <div class="grid-item">
+                <label for="Birthday">Birthday:</label>
+                <p id="birthday"></p>
+            </div>
+
+            <div class="grid-item">
+                <label for="Height">Height:</label>
+                <p id="height"></p>
+            </div>
+
+            <div class="grid-item">
+                <label for="Weight">Weight:</label>
+                <p id="weight"></p>
+            </div>
+        </div>
+
+
+        <div class="one-items-in-one-row">
+            <div class="grid-item">
+                <label for="Prisoners_Crime">Description of prisoner's crime:</label>
+                <p id="prisonersCrime"></p>
+            </div>
+        </div>
+
+        <div class="two-items-in-one-row">
+
+            <div class="grid-item">
+                <label for="Sentence_Start_Date">Sentence start date:</label>
+                <p id="sentenceStartDate"></p>
+            </div>
+
+            <div class="grid-item">
+                <label for="Sentence_End_Date">Sentence end date:</label>
+                <p id="sentenceEndDate"></p>
+            </div>
+        </div>
+
+
+        <div class="two-items-in-one-row">
+            <div class="grid-item">
+                <label for="Cell_Block">Cell block:</label>
+                <p id="cellBlock"></p>
+            </div>
+
+            <div class="grid-item">
+                <label for="cell_mate">Cell mate:</label>
+                <p id="cellMate"></p>
+            </div>
+
+        </div>
+
+        <div class="one-items-in-one-row">
+            <div class="grid-item">
+                <label for="threat_level">Prisoner threat level:</label>
+                <p id="threatLevel"></p>
+            </div>
+
+            <div class="grid-item">
+                <button id="backButton" class="button">Back</button>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+
+</html>

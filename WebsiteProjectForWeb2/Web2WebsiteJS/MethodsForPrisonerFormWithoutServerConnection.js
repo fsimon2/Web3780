@@ -1,5 +1,4 @@
-
-/*error message for height.*/
+// Error message for height
 document.getElementById('height').addEventListener('input', function () {
     validateHeightRange.call(this);
 });
@@ -32,9 +31,7 @@ function validateNumberInputForHeight(input) {
     }
 }
 
-
-
-/*error message for weight*/
+// Error message for weight
 document.getElementById('weight').addEventListener('input', function () {
     validateWeightRange.call(this);
 });
@@ -67,7 +64,7 @@ function validateNumberInputForWeight(input) {
     }
 }
 
-/*error message for first name*/
+// Error message for first name
 document.getElementById('prisoner_fname').addEventListener('input', function () {
     validateTextInputForName(this);
 });
@@ -84,7 +81,7 @@ function validateTextInputForName(input) {
     }
 }
 
-/*error message for last name*/
+// Error message for last name
 document.getElementById('prisoner_lname').addEventListener('input', function () {
     validateTextInputForLastName(this);
 });
@@ -101,7 +98,7 @@ function validateTextInputForLastName(input) {
     }
 }
 
-/*error message for the whole from*/
+// Error message for the whole form
 document.querySelector('form').addEventListener('submit', function (event) {
     validateForm(event);
 });
